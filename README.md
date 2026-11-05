@@ -1,50 +1,47 @@
-🎓 Student Marks Prediction Dashboard
-📌 Project Overview
-The Student Marks Prediction Dashboard is a Machine Learning project designed to predict students' final marks based on their academic and lifestyle factors.
+# 🎓 Student Marks Prediction Dashboard
 
-This project uses Linear Regression to predict student performance and Streamlit to build an interactive web dashboard.
+A Machine Learning-based web application that predicts students' final marks based on their academic and lifestyle factors. The dashboard is built using Python, Scikit-learn, and Streamlit.
 
-🎯 Objectives
-Predict students' final marks using Machine Learning.
-Analyze the relationship between study hours and academic performance.
-Understand the impact of attendance and previous marks.
-Develop an interactive dashboard for student performance prediction.
-🛠️ Technologies Used
-Python
-Pandas
-NumPy
-Scikit-learn
-Matplotlib
-Seaborn
-Streamlit
-Joblib
-📊 Dataset Description
-The dataset contains 100 student records.
+## 📌 Project Overview
 
-Feature	Description
-StudyHours	Daily study hours
-Attendance	Attendance percentage
-PreviousMarks	Previous academic marks
-SleepHours	Daily sleep hours
-SocialMediaHours	Daily social media usage
-FinalMarks	Student's final marks
-🤖 Machine Learning Algorithm
-Linear Regression
+The Student Marks Prediction Dashboard helps estimate a student's expected final marks using important features such as:
 
-Linear Regression is used to predict continuous numerical values based on input features.
+* Study Hours
+* Attendance
+* Previous Marks
+* Sleep Hours
+* Social Media Hours
 
-Model Evaluation
-Metric	Score
-MAE	3.92
-MSE	26.14
-RMSE	5.11
-R² Score	0.95
-The model achieved an R² score of 0.95 on the test dataset.
+The project uses a **Linear Regression** model to predict student performance and provides an interactive dashboard for users.
 
-Note: These results are based on a synthetic dataset. Performance on real student data may differ.
+## 🚀 Features
 
-📁 Project Structure
-studentmarks/
+* Predict students' final marks using Machine Learning
+* Interactive web dashboard using Streamlit
+* Data preprocessing and cleaning
+* Exploratory Data Analysis (EDA)
+* Machine Learning model training
+* Model evaluation using performance metrics
+* Visual representation of student performance
+
+## 🛠️ Technologies Used
+
+| Technology       | Purpose                   |
+| ---------------- | ------------------------- |
+| Python           | Programming Language      |
+| Pandas           | Data Processing           |
+| NumPy            | Numerical Computation     |
+| Scikit-learn     | Machine Learning          |
+| Matplotlib       | Data Visualization        |
+| Seaborn          | Statistical Visualization |
+| Streamlit        | Web Dashboard             |
+| Joblib           | Model Serialization       |
+| Jupyter Notebook | Exploratory Data Analysis |
+
+## 📂 Project Structure
+
+```text
+student-marks-prediction/
 │
 ├── dataset/
 │   ├── create_dataset.py
@@ -57,52 +54,109 @@ studentmarks/
 │   └── eda.ipynb
 │
 ├── src/
+│   ├── app.py
 │   ├── preprocessing.py
 │   ├── train.py
-│   └── app.py
+│   ├── readme.md
+│   └── requirement.txt
 │
-├── requirements.txt
-│
+├── .gitignore
 └── README.md
-⚙️ Installation
-Step 1: Clone the Repository
-git clone https://github.com/your-username/student-marks-prediction-dashboard.git
-Step 2: Navigate to Project Directory
-cd student-marks-prediction-dashboard
-Step 3: Create Virtual Environment
+```
+
+## 📊 Machine Learning Model
+
+**Algorithm:** Linear Regression
+
+The model predicts Final Marks based on student-related input features.
+
+### Model Evaluation
+
+| Metric   | Score |
+| -------- | ----: |
+| MAE      |  3.92 |
+| MSE      | 26.14 |
+| RMSE     |  5.11 |
+| R² Score |  0.95 |
+
+These results are based on the current dataset and training process.
+
+## ⚙️ Installation and Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Vamsi78990/student-marks-prediction.git
+```
+
+### 2. Navigate to the Project Folder
+
+```bash
+cd student-marks-prediction
+```
+
+### 3. Create a Virtual Environment
+
+```bash
 python -m venv .venv
-Step 4: Activate Virtual Environment
-Windows:
+```
 
+### 4. Activate Virtual Environment
+
+**Windows:**
+
+```bash
 .venv\Scripts\activate
-Step 5: Install Dependencies
-python -m pip install -r requirements.txt
-🚀 Running the Project
-Step 1: Train the Machine Learning Model
-python src/train.py
-Step 2: Launch the Streamlit Dashboard
-python -m streamlit run src/app.py
-Step 3: Open in Browser
-http://localhost:8501
-💻 Dashboard Features
-Interactive student input fields
-Study hours input
-Attendance percentage input
-Previous marks input
-Sleep hours input
-Social media usage input
-Final marks prediction
-Real-time prediction display
-🔮 Future Enhancements
-Student performance visualization
-Pass/Fail prediction
-Student risk analysis
-Advanced Machine Learning algorithms
-Database integration
-Online dashboard deployment
-👨‍💻 Author
-B.Tech Computer Science and Engineering – Data Science
+```
 
-📜 License
-This project is developed for educational and academic purposes.
+### 5. Install Required Libraries
+
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn streamlit joblib
+```
+
+### 6. Train the Machine Learning Model
+
+```bash
+python src/train.py
+```
+
+### 7. Run the Streamlit Dashboard
+
+```bash
+python -m streamlit run src/app.py
+```
+
+The dashboard will open in your browser at:
+
+```text
+http://localhost:8501
+```
+
+## 🔍 How It Works
+
+1. Collect student academic and lifestyle data.
+2. Perform data preprocessing.
+3. Conduct Exploratory Data Analysis.
+4. Train a Linear Regression model.
+5. Evaluate model performance.
+6. Save the trained model.
+7. Load the model into the Streamlit dashboard.
+8. Enter student details to predict final marks.
+
+## 🎯 Project Objective
+
+The primary objective is to understand how Machine Learning can be applied to student performance analysis and develop an interactive dashboard for educational data.
+
+## 👨‍💻 Author
+
+**Vamsi Krishnal**
+
+B.Tech — Computer Science and Engineering (Data Science)
+
+GitHub: [Vamsi78990](https://github.com/Vamsi78990)
+
+## ⚠️ Disclaimer
+
+This project is developed for educational purposes. The predicted marks are estimates generated by a Machine Learning model and should not be treated as actual academic results.
 
